@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vespasoft.android.pdfviewer">
+
+    <application>
+        <activity
+            android:theme="@style/AppNoActionTheme"
+            android:name="com.unisys.android.pdfviewer.platform.activities.PdfViewerActivity"></activity>
+    </application>
+
+</manifest>

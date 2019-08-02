@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name_with_index">PdfViewer (%1$d/%2$d)</string>
+    <string name="info">Info</string>
+    <string name="previous">Previous</string>
+    <string name="fullscreen">Full Screen</string>
+    <string name="search">Search</string>
+    <string name="viewlist">View List</string>
+    <string name="next">Next</string>
+
+</resources>
