@@ -28,6 +28,8 @@ import com.unisys.android.pdfviewer.presentation.DocumentListPresenter;
 import com.vespasoft.android.pdfviewer.R;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class PdfViewerActivity extends AppCompatActivity implements ReaderView, View.OnClickListener {
 
@@ -58,11 +60,8 @@ public class PdfViewerActivity extends AppCompatActivity implements ReaderView, 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf_viewer);
 
-        Uri uri = getIntent().getData();
-        File file = new File(uri.getPath());
-
-        //String sAssets = "file:///android_asset/" + "sample.pdf";
-        //File file = new  File(context().getCacheDir(), "/sample.pdf");
+        String filepath = getIntent().getStringExtra("filepath");
+        File file = new File(filepath);
 
         // create instance of View Presenter
         mDocListPresenter = new DocumentListPresenter();

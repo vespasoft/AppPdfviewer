@@ -88,8 +88,11 @@ public class PdfRendererFragment extends Fragment implements PdfView {
         super.onViewCreated(view, savedInstanceState);
 
         PdfViewerActivity activity = (PdfViewerActivity) getActivity();
-        Uri uri = activity.getIntent().getData();
-        File file = new File(uri.getPath());
+        //Uri uri = activity.getIntent().getData();
+        //File file = new File(uri.getPath());
+
+        String filepath = activity.getIntent().getStringExtra("filepath");
+        File file = new File(filepath);
 
         // Retain view references.
         mViewer = view.findViewById(R.id.viewer);
